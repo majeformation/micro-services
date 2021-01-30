@@ -37,7 +37,7 @@ jobs:
     - cd Chapter04
     - docker-compose build server
     - docker tag thoughts_server:latest majeformation/jd-thoughts-backend:$GIT_SHA
-    - docker push jaimebuelta/thoughts-backend:$GIT_SHA
+    - docker push majeformation/thoughts-backend:$GIT_SHA
     - docker tag thoughts_server:latest majeformation/jd-thoughts-backend:$TRAVIS_BRANCH
     deploy:
     - provider: script

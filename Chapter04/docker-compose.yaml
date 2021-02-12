@@ -76,7 +76,7 @@ services:
 
     server:
         env_file: environment.env
-        image: thoughts_server
+        image: XY-thoughts_server
         build:
             context: .
             dockerfile: docker/app/Dockerfile

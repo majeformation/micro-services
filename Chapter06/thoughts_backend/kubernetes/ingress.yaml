@@ -2,16 +2,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-    name: thoughts-backend-ingress
+    name: users-backend-ingress
     namespace: example
 spec:
     rules:
-        - host: thoughts.example.local
+        - host: users.example.local
           http:
             paths:
               - backend:
                   service:
-                    name: thoughts-service
+                    name: users-service
                     port:
                       number: 80
                 path: /
